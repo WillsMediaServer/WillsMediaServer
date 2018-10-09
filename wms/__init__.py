@@ -17,6 +17,3 @@ class WillsMediaServer:
     
     def start_server(self):
         self.app.run()
-
-
-wms = WillsMediaServer()
