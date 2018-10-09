@@ -51,15 +51,15 @@ class API:
         @api.route("/")
         def apiRoot():
             returnError = {
-                "status": BAD_REQUEST,
+                "status": METHOD_NOT_ALLOWED,
                 "message": "No API version specified"
             }
-            return jsonify(error=returnError), BAD_REQUEST
+            return jsonify(error=returnError), METHOD_NOT_ALLOWED
         
         @api.route("/v1")
         def apiV1Root():
             returnError = {
-                "status": BAD_REQUEST,
+                "status": METHOD_NOT_ALLOWED,
                 "message": "No Endpoint specified"
             }
-            return jsonify(error=returnError), BAD_REQUEST
+            return jsonify(error=returnError), METHOD_NOT_ALLOWED
