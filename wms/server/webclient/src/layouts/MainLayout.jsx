@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 
-import Navigation from './components/navigation/Navigation';
-import MediaBar from './components/media-bar/MediaBar';
+import Navigation from '../components/Navigation';
 
-class Layout extends Component {
+class MainLayout extends Component {
     render() {
         return (
             <React.Fragment>
                 <Navigation/>
                 {this.props.children}
-                <MediaBar/>
             </React.Fragment>
         );
     }
 }
 
-export default Layout;
+export default MainLayout;

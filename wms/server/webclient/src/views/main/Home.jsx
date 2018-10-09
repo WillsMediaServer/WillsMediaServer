@@ -1,11 +1,18 @@
 import React, { Component } from 'react';
 
+import { Container, Header } from 'semantic-ui-react';
+
+import Login from '../../components/Login';
+import Statistics from '../../components/Statistics';
+
 class Home extends Component {
     render() {
         return (
-            <div>
-                <h1>Home Page</h1>
-            </div>
+            <Container textAlign="center">
+                <Header size="huge">Home</Header>
+                <Login/>
+                <Statistics/>
+            </Container>
         );
     }
 }

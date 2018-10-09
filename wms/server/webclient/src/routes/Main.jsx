@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Layout from '../Layout';
+import MainLayout from '../layouts/MainLayout';
 
 import Home from '../views/main/Home';
 import Login from '../views/main/Login';
@@ -11,16 +11,14 @@ import Error404 from '../views/main/Error404';
 class Main extends Component {
     render() {
         return (
-            <React.Fragment>
-                <Layout>
-                    <Switch>
-                        <Route path="/" exact component={Home}/>
-                        <Route path="/login" component={Login}/>
-                        <Route path="/register" component={Register}/>
-                        <Route component={Error404}/>   
-                    </Switch>
-                </Layout>
-            </React.Fragment>
+            <MainLayout>
+                <Switch>
+                    <Route path="/" exact component={Home}/>
+                    <Route path="/login" component={Login}/>
+                    <Route path="/register" component={Register}/>
+                    <Route component={Error404}/>   
+                </Switch>
+            </MainLayout>
         );
     }
 }
