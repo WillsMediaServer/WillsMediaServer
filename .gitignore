@@ -1,4 +1,6 @@
+# Directories
 node_modules/
 __pycache__/
 .cache/
+.vscode/
 dist/
