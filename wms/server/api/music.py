@@ -3,7 +3,7 @@ class AlbumApi:
         self.routes(api)
     
     def routes(self, api):
-
+        
         @api.route("/music/albums", methods=["GET"])
         def get_albums():
             return "get albums"
@@ -23,3 +23,24 @@ class AlbumApi:
         @api.route("/music/album/<id>", methods=["DELETE"])
         def delete_album(id):
             return "delete an album"
+
+class ArtistApi:
+    def __init__(self, api):
+        self.routes(api)
+    
+    def routes(self, api):
+        pass
+
+class GenreApi:
+    def __init__(self, api):
+        self.routes(api)
+    
+    def routes(self, api):
+        pass
+
+class SongApi:
+    def __init__(self, api):
+        self.routes(api)
+    
+    def routes(self, api):
+        pass

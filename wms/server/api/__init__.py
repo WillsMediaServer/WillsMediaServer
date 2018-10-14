@@ -11,3 +11,6 @@ class Api:
         self.api = blueprint
 
         music.AlbumApi(self.api)
+        music.ArtistApi(self.api)
+        music.GenreApi(self.api)
+        music.SongApi(self.api)
