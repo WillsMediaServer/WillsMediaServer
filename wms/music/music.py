@@ -1,34 +1,32 @@
-
-
 class Music:
     def __init__(self):
         pass
     
     # Albums
-    def getAlbum(self, id):
+    def get_album(self, id):
         pass
     
-    def getAllAlbums(self):
+    def get_all_albums(self):
         pass
 
     # Artists
-    def getArtist(self, id):
+    def get_artist(self, id):
         pass
     
-    def getAllArtists(self):
+    def get_all_artists(self):
         pass
     
     # Genres
-    def getGenre(self, id):
+    def get_genre(self, id):
         pass
     
-    def getAllGenres(self):
+    def get_all_genres(self):
         pass
 
     # Songs
-    def getSong(self, id):
+    def get_song(self, id):
         pass
     
-    def getAllSongs(self):
+    def get_all_songs(self):
         pass
 

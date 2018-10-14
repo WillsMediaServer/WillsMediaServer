@@ -7,5 +7,5 @@ class Client:
 
     def routes(self, client):
         @client.route("/")
-        def clientRoot():
+        def client_root():
             return client.send_static_file("index.html")

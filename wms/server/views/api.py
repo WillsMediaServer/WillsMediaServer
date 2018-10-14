@@ -20,19 +20,19 @@ class API:
     def __init__(self):
         self.blueprint = Blueprint("api", __name__)
         
-        self.filmEndpoints()
-        self.musicEndpoints()
-        self.tvEndpoints()
-        self.userEndpoints()
+        self.film_endpoints()
+        self.music_endpoints()
+        self.tv_endpoints()
+        self.user_endpoints()
 
-    def filmEndpoints(self):
+    def film_endpoints(self):
         pass
 
-    def musicEndpoints(self):
+    def music_endpoints(self):
         pass
     
-    def tvEndpoints(self):
+    def tv_endpoints(self):
         pass
     
-    def userEndpoints(self):
+    def user_endpoints(self):
         pass
