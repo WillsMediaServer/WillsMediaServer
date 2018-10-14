@@ -6,7 +6,16 @@ class Music:
     def get_album(self, id):
         pass
     
-    def get_all_albums(self):
+    def get_all_albums(self, limit, offset=0):
+        pass
+    
+    def add_album(self, data):
+        pass
+    
+    def update_album(self, id, data):
+        pass
+    
+    def delete_album(self, id):
         pass
 
     # Artists
