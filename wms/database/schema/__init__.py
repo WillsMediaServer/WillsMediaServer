@@ -39,4 +39,12 @@ class Query(graphene.ObjectType):
     songs_list = SQLAlchemyConnectionField(song.Song)
 
 
-schema = graphene.Schema(query=Query)
+class Mutation(graphene.ObjectType):
+    # Main
+    create_user = user.CreateUser.Field()
+    update_user = user.UpdateUser.Field()
+
+    create_setting = setting.CreateSetting.Field()
+    update_setting = setting.UpdateSetting.Field()
+
+schema = graphene.Schema(query=Query, mutation=Mutation)
