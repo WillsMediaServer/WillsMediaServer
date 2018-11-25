@@ -14,7 +14,7 @@ class ModelResource(MusicBase):
 
     __tablename__ = "resources"
 
-    id = Column("id", String(36), primary_key=True, default=uuid.uuid4)
+    id = Column("id", String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     format = Column("format", String)
     location = Column("location", Text)
 

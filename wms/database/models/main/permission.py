@@ -13,7 +13,7 @@ class ModelPermission(MainBase):
 
     __tablename__ = "permissions"
 
-    id = Column("id", String(36), primary_key=True, default=uuid.uuid4)
+    id = Column("id", String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     name = Column("name", String)
     level = Column("level", Integer)
 

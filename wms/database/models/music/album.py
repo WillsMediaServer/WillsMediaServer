@@ -14,7 +14,7 @@ class ModelAlbum(MusicBase):
 
     __tablename__ = "albums"
 
-    id = Column("id", String(36), primary_key=True, default=uuid.uuid4)
+    id = Column("id", String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     name = Column("name", String)
     release_date = Column("release_date", Date)
 

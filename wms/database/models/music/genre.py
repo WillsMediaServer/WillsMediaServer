@@ -15,7 +15,7 @@ class ModelGenre(MusicBase):
 
     __tablename__ = "genres"
 
-    id = Column("id", String(36), primary_key=True, default=uuid.uuid4)
+    id = Column("id", String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     name = Column("name", String)
     description = Column("description", Text)
 

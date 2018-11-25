@@ -15,7 +15,7 @@ class ModelCover(MusicBase):
 
     __tablename__ = "covers"
 
-    id = Column("id", String(36), primary_key=True, default=uuid.uuid4)
+    id = Column("id", String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     location = Column("location", Text)
 
     albums = relationship(ModelAlbum, backref="cover")

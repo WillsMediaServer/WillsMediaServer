@@ -12,9 +12,10 @@ class ModelUser(MainBase):
 
     __tablename__ = "users"
 
-    id = Column("id", String(36), primary_key=True, default=uuid.uuid4)
-    username = Column("username", String(64), unique=True)
-    first_name = Column("first_name", String(64))
-    last_name = Column("last_name", String(64))
-    email = Column("email", String(64))
+    id = Column("id", String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
+    username = Column("username", String, unique=True)
+    password = Column("password", String)
+    first_name = Column("first_name", String)
+    last_name = Column("last_name", String)
+    email = Column("email", String)
     permission_id = Column("permission", String(36), ForeignKey("permissions.id"))

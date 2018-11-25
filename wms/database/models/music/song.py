@@ -11,7 +11,7 @@ class ModelSong(MusicBase):
 
     __tablename__ = "songs"
 
-    id = Column("id", String(36), primary_key=True, default=uuid.uuid4)
+    id = Column("id", String(36), primary_key=True, default=lambda: str(uuid.uuid4()))
     name = Column("name", String(255))
     length = Column("length", Integer)
 
