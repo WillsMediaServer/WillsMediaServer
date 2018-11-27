@@ -47,4 +47,27 @@ class Mutation(graphene.ObjectType):
     create_setting = setting.CreateSetting.Field()
     update_setting = setting.UpdateSetting.Field()
 
+    create_permission = permission.CreatePermission.Field()
+    update_permission = permission.UpdatePermission.Field()
+
+    # Music
+    create_album = album.CreateAlbum.Field()
+    update_album = album.UpdateAlbum.Field()
+
+    create_artist = artist.CreateArtist.Field()
+    update_artist = artist.UpdateArtist.Field()
+
+    create_cover = cover.CreateCover.Field()
+    update_cover = cover.UpdateCover.Field()
+
+    create_genre = genre.CreateGenre.Field()
+    update_genre = genre.UpdateGenre.Field()
+
+    create_resource = resource.CreateResource.Field()
+    update_resource = resource.UpdateResource.Field()
+
+    create_song = song.CreateSong.Field()
+    update_song = song.UpdateSong.Field()
+
+
 schema = graphene.Schema(query=Query, mutation=Mutation)
