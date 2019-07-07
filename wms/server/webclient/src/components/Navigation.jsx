@@ -6,7 +6,7 @@ import { Menu, Icon } from 'semantic-ui-react';
 class Navigation extends Component {
     render() {
         return (
-            <Menu inverted stackable icon="labeled">
+            <Menu inverted borderless stackable icon="labeled">
                 <Menu.Item header name="home" as={Link} to="/">
                     <Icon name="home"/>
                     Wills Media Server

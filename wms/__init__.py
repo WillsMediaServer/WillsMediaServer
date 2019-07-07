@@ -81,8 +81,11 @@ class WillsMediaServer:
 
     def setup_flask(self):
         @self.app.after_request
-        def request_logging(response):
+        def after_request(response):
             logging.debug(f"Request: {request.method} {request.remote_addr} {request.url}")
+            # Allow cors
+            response.headers["Access-Control-Allow-Origin"] = "*"
+            response.headers["Access-Control-Allow-Headers"] = "content-type"
             return response
 
         @self.app.teardown_appcontext

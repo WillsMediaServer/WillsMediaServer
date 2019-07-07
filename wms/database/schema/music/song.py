@@ -9,7 +9,7 @@ import graphene
 
 class SongAttribute:
     name = graphene.String(description="Name of the song")
-    length = graphene.String(description="Length of the song in seconds")
+    length = graphene.Int(description="Length of the song in seconds")
     album_id = graphene.String(description="ID of the song's album")
     artist_id = graphene.String(description="ID of the song's artist")
     cover_id = graphene.String(description="ID of the song's cover")
