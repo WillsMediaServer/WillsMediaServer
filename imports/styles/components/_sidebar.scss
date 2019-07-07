@@ -1,0 +1,66 @@
+// 
+// Sidebar Styles
+// 
+
+.sidebar {
+    width: 100%;
+    grid-area: sidebar;
+    background-color: $colour-bluegray-900;
+
+    .profile {
+        width: 100%;
+
+        .profile-picture {
+            display: block;
+            width: 90%;
+            margin: .5em auto;
+            border-radius: 50%;
+        }
+
+        .user-details {
+            margin: 0 .5em;
+            text-align: center;
+            color: $default-text-colour;
+
+            .full-name {
+                font-size: 1.2em;
+                font-weight: bolder;
+            }
+
+            .username-rank {
+                font-size: 0.8em;
+                font-weight: lighter;
+            }
+        }
+    }
+
+    hr {
+        border-image: linear-gradient(to right, rgba(0,0,0,0), $colour-bluegray-500, rgba(0,0,0,0));
+        border-image-slice: 1;
+        border-width: 1px;
+        border-top: none;
+    }
+
+    .sidebar-links {
+        display: block;
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            padding: 0 .5em;
+            font-size: 1.2em;
+            color: $default-text-colour;
+            text-decoration: none;
+            border-left: 5px solid transparent;
+
+            .sidebar-link-text {
+                margin-left: .5em;
+            }
+
+            &:hover,
+            &.active {
+                border-left: 5px solid #fff;
+            }
+        }
+    }
+}

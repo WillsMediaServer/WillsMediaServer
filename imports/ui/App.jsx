@@ -1,17 +1,17 @@
 import React from 'react';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Sidebar from "./Sidebar"
-import Header from "./Header"
-import DashboardPage from "./Dashboard"
+import AppRoutes from "./routes/AppRoutes"
+import MainRoutes from "./routes/MainRoutes"
+
 
 const App = () => (
-    <>
-        <Sidebar/>
-        <section className="content">
-            <Header/>
-            <DashboardPage/>
-        </section>
-    </>
+    <Router>
+        <Switch>
+            <Route path="/app" component={ AppRoutes }/>
+            <Route path="/" component={ MainRoutes }/>
+        </Switch>
+    </Router>
 );
 
 export default App;

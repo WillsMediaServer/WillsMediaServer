@@ -1,0 +1,31 @@
+// 
+// Statistic Styles
+// 
+
+.statistic {
+    display: block;
+    background-color: $colour-bluegray-500;
+    color: $default-text-colour;
+    flex-grow: 1;
+    text-align: center;
+    padding: 2em 0;
+    margin: .5em;
+    border-radius: $default-border-radius;
+    
+    .statistic-number {
+        font-weight: lighter;
+        font-size: 2em;
+        display: block;
+    }
+    
+    .statistic-name {
+        font-weight: bold;
+        font-size: 1em;
+        display: block;
+    }
+}
+
+.statistic-group {
+    display: flex;
+    width: 100%;
+}

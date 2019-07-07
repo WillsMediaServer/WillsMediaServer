@@ -18,6 +18,7 @@ $colour-red-500: #f44336;
 $colour-red-700: #d32f2f;
 
 // Blue
+$colour-blue-500: #2196F3;
 $colour-blue-700: #1976D2;
 
 // Light Blue
@@ -42,6 +43,12 @@ $colour-orange-700: #F57C00;
 $colour-deeporange-300: #FF8A65;
 
 // Blue Gray
+$colour-bluegray-100: #CFD8DC;
+$colour-bluegray-200: #B0BEC5;
+$colour-bluegray-300: #90A4AE;
+$colour-bluegray-400: #78909C;
+$colour-bluegray-500: #607D8B;
+$colour-bluegray-600: #546E7A;
 $colour-bluegray-700: #455A64;
 $colour-bluegray-800: #37474F;
 $colour-bluegray-900: #263238;
@@ -78,6 +85,8 @@ $default-padding: .5em;
 $default-border-radius: .2em;
 
 $body-padding: $default-margin * 4;
+
+$block-width: 90%;
 
 $button-border-width: 1px;
 $button-padding-x: 1em;

@@ -3,12 +3,17 @@
 // Import required
 @import "variables";
 @import "reset";
+@import "typography";
 
 // Components
-@import "buttons";
-@import "films";
-@import "layout";
-@import "songs";
-@import "statistics";
-@import "tv";
-@import "typography";
+@import "components/buttons";
+@import "components/dropdown";
+@import "components/header";
+@import "components/inputs";
+@import "components/sidebar";
+@import "components/statistic";
+
+// Containers
+@import "containers/app_layout";
+@import "containers/jumbotron";
+@import "containers/page";

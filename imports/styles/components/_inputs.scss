@@ -1,0 +1,17 @@
+// 
+// Input Styles
+// 
+
+.input {
+    display: inline-block;
+    padding: .5em;
+    border: 1px solid #fff;
+    border-radius: $default-border-radius;
+    font-size: 1.2em;
+
+    &.input-block {
+        display: block;
+        margin: .5em auto;
+        width: $block-width;
+    }
+}

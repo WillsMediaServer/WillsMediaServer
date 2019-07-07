@@ -1,0 +1,56 @@
+// 
+// Header Styles
+// 
+
+.header {
+    display: flex;
+    grid-area: header;
+    align-items: center;
+    background-color: $colour-bluegray-800;
+
+    .logo {
+        font-size: 2em;
+        font-weight: 900;
+        margin: 0 1em;
+        color: $default-text-colour;
+    }
+
+    .searchbar {
+        display: inline-flex;
+
+        .searchbar-input {
+            border-radius: $default-border-radius 0 0 $default-border-radius;
+        }
+
+        .searchbar-dropdown {
+            border-radius: 0;
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+        }
+
+        .searchbar-button {
+            display: flex;
+            border-radius: 0 $default-border-radius $default-border-radius 0;
+            margin: 0;
+            padding: .5em;
+            background-color: #fff;
+            border-color: #fff;
+            color: #000;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .right-icons {
+        display: flex;
+        margin: 0 .5em 0 auto;
+        color: #fff;
+        font-size: 2em;
+        align-items: center;
+        
+        svg {
+            margin-left: .25em;
+            cursor: pointer;
+        }
+    }
+}

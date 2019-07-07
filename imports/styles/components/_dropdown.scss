@@ -1,0 +1,12 @@
+// 
+// Dropdown Styles
+// 
+
+.dropdown {
+    display: inline-block;
+    padding: .5em;
+    border: none;
+    border-radius: $default-border-radius;
+    font-size: 1.2em;
+    cursor: pointer;
+}

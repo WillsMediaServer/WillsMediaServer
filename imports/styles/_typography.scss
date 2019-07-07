@@ -1,7 +1,30 @@
 // 
-// Typography
+// Typography Styles
 // 
 
-.subtitle {
-    margin: $default-margin;
+a {
+    text-decoration: none;
+    color: $colour-blue-500;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.linkgroup {
+    a {
+        margin: .25em;
+    }
+}
+
+.largetitle {
+    display: block;
+    color: #212121;
+    margin: 1em 0;
+    font-size: 4em;
+    font-weight: lighter;
+
+    &.largetitle-white {
+        color: #ffffff;
+    }
 }

@@ -34,27 +34,24 @@
     font-weight: 800;
 }
 
-// Main Containers
+// Main
 
-html,
-body,
-#react-target {
-    width: 100vw;
-    height: 100vh;
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: normal;
-    display: flex;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-.content {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    max-width: calc(100% - 200px);
-    margin: 0 0 0 200px;
+html,
+body,
+.app-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
 }
 
 // Text
@@ -68,5 +65,4 @@ h6,
 p {
     margin: 0;
     padding: 0;
-    color: $default-text-colour;
 }

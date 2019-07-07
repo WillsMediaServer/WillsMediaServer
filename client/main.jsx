@@ -7,5 +7,5 @@ import "/imports/styles/main.scss";
 import App from '/imports/ui/App';
 
 Meteor.startup(() => {
-  render(<App />, document.getElementById('react-target'));
+  render(<App />, document.getElementsByClassName("app-container")[0]);
 });
