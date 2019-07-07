@@ -1,0 +1,84 @@
+// //
+// // Variables
+// //
+
+// Fonts
+
+$default-font-family: "Open Sans", Arial, Helvetica, sans-serif;
+$default-font-weight: 400;
+
+// 
+// Colours
+// NOTE: Uses mostly Material Design colours
+// 
+
+// Red
+$colour-red-300: #e57373;
+$colour-red-500: #f44336;
+$colour-red-700: #d32f2f;
+
+// Blue
+$colour-blue-700: #1976D2;
+
+// Light Blue
+$colour-lightblue-300: #4FC3F7;
+$colour-lightblue-500: #03A9F4;
+$colour-lightblue-700: #0288D1;
+
+// Green
+$colour-green-300: #81C784;
+$colour-green-500: #4CAF50;
+$colour-green-700: #388E3C;
+
+// Light Green
+$colour-lightgreen-300: #AED581;
+
+// Orange
+$colour-orange-300: #FFB74D;
+$colour-orange-500: #FF9800;
+$colour-orange-700: #F57C00;
+
+// Deep Orange
+$colour-deeporange-300: #FF8A65;
+
+// Blue Gray
+$colour-bluegray-700: #455A64;
+$colour-bluegray-800: #37474F;
+$colour-bluegray-900: #263238;
+
+// Primary Colours
+$colour-primary-lighter: $colour-lightblue-300;
+$colour-primary:         $colour-lightblue-500;
+$colour-primary-darker:  $colour-lightblue-700;
+
+// Success Colours
+$colour-success-lighter: $colour-green-300;
+$colour-success:         $colour-green-500;
+$colour-success-darker:  $colour-green-700;
+
+// Warning Colours
+$colour-warning-lighter: $colour-orange-300;
+$colour-warning:         $colour-orange-500;
+$colour-warning-darker:  $colour-orange-700;
+
+// Danger Colours
+$colour-danger-lighter: $colour-red-300;
+$colour-danger:         $colour-red-500;
+$colour-danger-darker:  $colour-red-700;
+
+// Default colours
+$default-text-colour: #ffffff;
+
+//
+// Sizes
+//
+
+$default-margin: .5em;
+$default-padding: .5em;
+$default-border-radius: .2em;
+
+$body-padding: $default-margin * 4;
+
+$button-border-width: 1px;
+$button-padding-x: 1em;
+$button-padding-y: .5em;

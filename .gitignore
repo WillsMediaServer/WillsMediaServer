@@ -1,11 +1,2 @@
-# Directories
 node_modules/
-__pycache__/
-.cache/
 .vscode/
-dist/
-
-# Files
-*.log
-*.log.*
-*.db

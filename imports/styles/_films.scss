@@ -1,0 +1,58 @@
+// 
+// films Components
+// 
+
+.filmlist {
+    margin: 0 0 0 $default-margin;
+    display: flex;
+    overflow-x: scroll;
+    max-width: 100%;
+
+    &::-webkit-scrollbar {
+        height: 0;
+    }
+}
+
+.filmlist-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .filmlist-controls {
+        display: flex;
+        margin: $default-margin ($body-padding + $default-margin) $default-margin auto;
+        color: $default-text-colour;
+
+        svg {
+            cursor: pointer;
+        }
+    }
+}
+
+.film {
+    display: inline-block;
+    margin-right: $default-margin * 4;
+    text-align: left;
+    color: $default-text-colour;
+
+    .film-cover {
+        display: block;
+        width: 128px;
+        height: 200px;
+        background-image: url("/images/film-cover.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: $default-border-radius;
+    }
+
+    .film-details {
+        margin: .2em 0;
+        
+        .film-name {
+            font-size: 1.1em;
+            font-weight: normal;
+            word-break: break-all;
+        }
+    }    
+}

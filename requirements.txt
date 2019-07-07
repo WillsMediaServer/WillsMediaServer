@@ -1,6 +1,0 @@
-cheroot
-flask
-flask_graphql
-sqlalchemy
-graphene
-graphene_sqlalchemy

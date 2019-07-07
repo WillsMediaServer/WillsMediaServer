@@ -1,0 +1,64 @@
+// 
+// Songs Components
+// 
+
+.songlist {
+    margin: 0 0 0 $default-margin;
+    display: flex;
+    overflow-x: scroll;
+    max-width: 100%;
+
+    &::-webkit-scrollbar {
+        height: 0;
+    }
+}
+
+.songlist-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .songlist-controls {
+        display: flex;
+        margin: $default-margin ($body-padding + $default-margin) $default-margin auto;
+        color: $default-text-colour;
+
+        svg {
+            cursor: pointer;
+        }
+    }
+}
+
+.song {
+    display: inline-block;
+    margin-right: $default-margin * 4;
+    text-align: left;
+    color: $default-text-colour;
+
+    .song-cover {
+        display: block;
+        width: 128px;
+        height: 128px;
+        background-image: url("/images/music-cover.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: $default-border-radius;
+    }
+
+    .song-details {
+        margin: .2em 0;
+        
+        .song-name {
+            font-size: 1.1em;
+            font-weight: normal;
+            word-break: break-all;
+        }
+        
+        .song-artist {
+            font-size: 0.8em;
+            font-weight: 100;
+            word-break: break-all;
+        }
+    }    
+}

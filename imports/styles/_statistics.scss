@@ -1,0 +1,51 @@
+// 
+// Statistics
+// 
+
+.statistic-group {
+    display: flex;
+    width: calc(100% - $body-padding);
+    margin-bottom: $default-margin;
+    padding-right: $body-padding;
+}
+
+.statistic {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: $default-margin;
+    border-radius: $default-padding;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+
+    &.statistic-music {
+        background-image: url("/images/music-background.png"), linear-gradient(30deg, $colour-lightblue-300, $colour-blue-700);
+    }
+    
+    &.statistic-films {
+        background-image: url("/images/films-background.png"), linear-gradient(30deg, $colour-orange-300, $colour-red-700);
+    }
+    
+    &.statistic-tv {
+        background-image: url("/images/tv-background.png"), linear-gradient(30deg, $colour-lightgreen-300, $colour-green-700);
+    }
+
+    .statistic-number {
+        font-size: 2.5em;
+        font-weight: bolder;
+        margin: ($default-margin * 4) 0 0 0;
+    }
+
+    .statistic-name {
+        font-size: 1.5em;
+        font-weight: lighter;
+        margin: 0 0 ($default-margin * 5) 0;
+    }
+}
