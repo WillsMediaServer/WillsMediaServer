@@ -1,0 +1,21 @@
+{
+  "name": "willsmediaserver",
+  "version": "0.0.1",
+  "description": "A Simple yet Powerful self-hosted media server",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillsMediaServer/WillsMediaServer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WillsMediaServer/WillsMediaServer/issues"
+  },
+  "homepage": "https://github.com/WillsMediaServer/WillsMediaServer#readme"
+}
