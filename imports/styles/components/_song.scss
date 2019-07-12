@@ -1,0 +1,14 @@
+// 
+// Song Styles
+// 
+
+.song {
+    display: inline-block;
+    margin-left: .5em;
+
+    .song-cover {
+        width: 128px;
+        height: 128px;
+        border-radius: $default-border-radius;
+    }
+}
