@@ -9,8 +9,14 @@
 import mongoose from "mongoose"
 
 const musicGenreSchema = new mongoose.Schema({
-    name:        { type: String, required: true },
-    description: { type: String }
+    name: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: false
+    }
 })
 
 export default mongoose.model("MusicGenre", musicGenreSchema, "musicGenres")

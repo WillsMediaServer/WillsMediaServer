@@ -9,11 +9,23 @@
 import mongoose from "mongoose"
 
 const songSchema = new mongoose.Schema({
-    name:          { type: String, required: true },
-    length:        { type: Number },
-    dateAdded:     { type: Date },
-    dateReleased:  { type: Date },
-    numberOfPlays: { type: Number },
+    name: {
+        type: String,
+        required: true
+    },
+    dateAdded: {
+        type: Date,
+        required: true
+    },
+    dateReleased: {
+        type: Date,
+        required: false
+    },
+    numberOfPlays: {
+        type: Number,
+        required: false,
+        default: 0
+    },
     
     albums:    [{ type: mongoose.Schema.Types.ObjectId, ref: "Album" }],
     artists:   [{ type: mongoose.Schema.Types.ObjectId, ref: "Artist" }],
